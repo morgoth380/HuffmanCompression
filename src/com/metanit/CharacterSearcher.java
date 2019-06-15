@@ -11,6 +11,9 @@ public class CharacterSearcher {
 
             for(int j = 0; j < tmp.length(); j++){
                 tmpChar = tmp.charAt(j);
+                for(int k = j; k < tmp.length(); k++){
+
+                }
             }
         }
 
