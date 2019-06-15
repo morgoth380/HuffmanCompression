@@ -18,7 +18,11 @@ public class Main {
                 FileArray.add(strLine); //!Сохраняем считанную строку во временном массиве строк
                 i++; //после выхода из цикла i будет равно коли количеству считанных строк
             }
-            System.out.println(i);
+            //Далее необходимо посчитать частоту вхождений каждого символа файла
+            CharacterSearcher Searcher = new CharacterSearcher();
+            Searcher.CharacterCnt(FileArray); //Считаем вхождения каждого символа файла в файле
+
+
         }catch(IOException ex){
             System.out.println(ex.getMessage());
         }
